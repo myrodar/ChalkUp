@@ -1,0 +1,25 @@
+/* Ticker animation styles */
+.ticker-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker {
+  display: flex;
+  width: fit-content;
+  animation: ticker 40s linear infinite;
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
